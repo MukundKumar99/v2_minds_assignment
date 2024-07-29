@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# ReactJS Assignment - Notes Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objectives
 
-## Available Scripts
+The application allow users to Create, View, Edit and Delete notes.
 
-In the project directory, you can run:
+### Tech Stack
 
-### `npm start`
+Use ReactJs, React Router, CSS Flexbox and Media Queries for responsiveness, Github for version control and Netlify for hosting.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Must Have
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ReactJs, Git, Netlify
 
-### `npm test`
+### Routes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Page        | Route      | Path        |
+| ----------- | ---------- | ----------- |
+| Login       | Login      | /login      |
+| Register    | Register   | /register   |
+| All Notes   | AllNotes   | /           |
+| Create Note | CreateNote | /createNote |
 
-### `npm run build`
+### Routes Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Login Screen
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> - On opening the app, user will be redirected to Login screen.
+> - Registered user can login to the app using Username/ Email and password.
+> - On successfull registration, user will be redirected to All Notes Screen.
+> - New user can click on Sign Up link which will redirect him to register page. User can enter New Login Credentials to create a new account.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Register Screen
 
-### `npm run eject`
+> - User can enter New Login Credentials (Username/ Email, Password) to create a new account.
+> - If already registered user tries to register again, an error message will be displayed.
+> - On successfull registration, user will be rediredted to Login Screen.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### All Notes Screen
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> - This screen will show all the created notes.
+> - On clicking the note, a popup will be opened which will have an option to change background color, pin/unpin, edit and delete that note.
+> - A New Note button at the bottom of screen which redirects user to create note screen.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Create Post Screen
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> - Allows user to create a new note.
+> - User can enter Title, Description and select background color, pin or unpin the note.
+> - After adding new note, user will be automatically redirected to all notes screen.
 
-## Learn More
+### Github Repository Link
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://github.com/MukundKumar99/v2_minds_assignment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Set Up Instructions for running project locally
 
-### Code Splitting
+> - Run "git clone https://github.com/MukundKumar99/v2_minds_assignment" in the terminal.
+> - Run "npm install" to install all dependencies.
+> - Run "npm start" to run the app on local server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Font-families used
 
-### Analyzing the Bundle Size
+> - Roboto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Project Deployment Link
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://mukundnotes.netlify.app
