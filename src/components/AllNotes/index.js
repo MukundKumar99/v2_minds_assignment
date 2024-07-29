@@ -2,7 +2,7 @@ import { Component } from "react";
 import axios from "axios";
 import "./index.css";
 import Cookies from "js-cookie";
-import EditNote from "../EditNote";
+import NoteItem from "../NoteItem";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Navbar from "../Navbar";
 import { Vortex } from "react-loader-spinner";
@@ -73,7 +73,7 @@ class AllNotes extends Component {
       <div className="all-notes-bg-container">
         <ul className="all-notes-container">
           {notesList.map((eachNote) => (
-            <EditNote
+            <NoteItem
               noteData={eachNote}
               key={eachNote._id}
               getAllNotes={this.getAllNotes}
