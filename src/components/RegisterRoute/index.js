@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 import { Redirect } from "react-router-dom";
 
-class Register extends Component {
+class RegisterRoute extends Component {
   state = {
     username: "",
     password: "",
@@ -126,4 +126,4 @@ class Register extends Component {
   }
 }
 
-export default Register;
+export default RegisterRoute;
